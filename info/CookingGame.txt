@@ -1,0 +1,8 @@
+- receitas randomizadas
+- pratos deslizam pelo balcão
+- espaço para cair os ingredientes
+- ingredientes em "potes" no teto
+- cada prato bem feito x pontos
+- cada prato mal feito -x pontos
+- para passar um nível fazer +x pontos
+- cada nível mais ingredientes
