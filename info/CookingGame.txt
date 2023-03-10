@@ -6,3 +6,23 @@
 - cada prato mal feito -x pontos
 - para passar um nível fazer +x pontos
 - cada nível mais ingredientes
+
+ingredientes:
+    Hamburger:
+        -pao 
+        -carne
+        -queijo
+        -alface
+        -cebola
+        -tiras bacon
+        -ovo
+        -ketchup
+        -maionese
+
+    Pizza:
+        -massa
+        -molho tomate
+        -queijo
+        -peperoni
+        -bacon
+        -
