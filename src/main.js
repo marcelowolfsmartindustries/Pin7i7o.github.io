@@ -1,4 +1,5 @@
 import Phaser from 'phaser'
+import Food from './scenes/Food'
 import Game from './scenes/Game'
 import Preloader from './scenes/Preloader'
 
@@ -16,7 +17,7 @@ const config = {
 			gravity: { y: 300 }
 		}
 	},
-	scene: [Preloader, Game]
+	scene: [Preloader, Game, Food]
 }
 
 export default new Phaser.Game(config)
