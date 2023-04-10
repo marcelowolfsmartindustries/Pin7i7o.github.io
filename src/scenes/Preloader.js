@@ -7,6 +7,7 @@ export default class Preloader extends Phaser.Scene
         super('preloader')
     }
 
+    //Preloads all resources needed to the game
     preload()
     {
         this.load.image('kitchen', 'assets/Background/kitchen.png')
@@ -20,6 +21,21 @@ export default class Preloader extends Phaser.Scene
         this.load.image('lettuce', 'assets/Food/Lettuce.png')
         this.load.image('patty', 'assets/Food/Patty.png')
         this.load.image('tomato', 'assets/Food/Tomato.png')
+        this.load.image('r1', 'assets/Recipes/R1.png')
+        this.load.image('r2', 'assets/Recipes/R2.png')
+        this.load.image('r3', 'assets/Recipes/R3.png')
+        this.load.image('r4', 'assets/Recipes/R4.png')
+        this.load.image('r5', 'assets/Recipes/R5.png')
+        this.load.image('r6', 'assets/Recipes/R6.png')
+        this.load.image('r7', 'assets/Recipes/R7.png')
+        this.load.image('r8', 'assets/Recipes/R8.png')
+        this.load.image('r9', 'assets/Recipes/R9.png')
+        this.load.image('r10', 'assets/Recipes/R10.png')
+        this.load.image('menu', 'assets/Background/menu.png')
+        this.load.image('game_over', 'assets/Background/gameover.png')
+        this.load.image('play_button', 'assets/Background/play_button.png')
+        this.load.image('reward', 'assets/Background/reward.png')
+        this.load.image('punish', 'assets/Background/punish.png')
         this.load.atlas('droppers', 'assets/SpriteSheets/droppers.png', 'assets/SpriteSheets/droppers.json')
         this.load.spritesheet('conveyor_belt', 'assets/SpriteSheets/conveyor_belt.png', {
             frameWidth: 1380, frameHeight: 110
@@ -27,6 +43,7 @@ export default class Preloader extends Phaser.Scene
 
     }
 
+    //Creates belt movement animation, and starts the menu scene
     create()
     {
         this.anims.create({
@@ -35,8 +52,7 @@ export default class Preloader extends Phaser.Scene
             frameRate: 10
         })
 
-
-        this.scene.start('game')
+        this.scene.start('menu')
 
     }
 
